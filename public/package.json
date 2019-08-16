@@ -1,0 +1,27 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "qunit test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoojacks/pokedex.git"
+  },
+  "author": "Sam Jespersen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoojacks/pokedex/issues"
+  },
+  "homepage": "https://github.com/hoojacks/pokedex#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "esm": "^3.2.25",
+    "jsdom": "^15.1.1",
+    "qunit": "^2.9.2"
+  }
+}
