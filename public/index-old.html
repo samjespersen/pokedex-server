@@ -8,43 +8,57 @@
         <link rel='stylesheet' href='src/main.css' type='text/css'>
         <link rel='stylesheet' href='src/components/header/header.css'
             type='text/css'>
-        <link rel='stylesheet' href='src/components/cards/card.css'
+        <link rel='stylesheet' href='src/components/settings/settings.css'
             type='text/css'>
-        <link rel='stylesheet' href='src/components/cards/card-container.css'
+        <link rel='stylesheet' href='src/components/cards/card.css'
             type='text/css'>
         <title>The PokeDex</title>
     </head>
-    <body class="">
+    <body id="root" class="">
         <div id="wrapper">
-            <header>
+            <header id="header-container">
                 <div id='main-header'>
-                    <div id='logo'><img src="assets/pokeball.png"
+                    <div id='logo'><img src="./assets/pokeball.png"
                             alt="pokeball"></div>
                     <div><h1>The PokeDex</h1></div>
                 </div>
             </header>
-            <div id="settings">
-                <div class="settings-container">
-                    <div id="search"><h2>Search</h2>
-                        <div
-                            class="search-controls"><input
-                                type="text"><input
-                                type="number"></div>
-                    </div></div>
-                <div class="settings-container"> <div id="sort"><h2>Sort</h2><div
-                            class="search-controls"><input type="text"><input
-                                type="number"></div></div></div>
+            <div id="settings-div">
+                <div id="settings">
+                    <div class="settings-container">
+                        <div id="search"><h2>Search</h2>
+                            <div
+                                class="search-controls"><input
+                                    type="text"><input
+                                    type="number"></div>
+                        </div></div>
+                    <div class="settings-container"> <div id="sort"><h2>Sort</h2><div
+                                class="search-controls"><input type="text"><input
+                                    type="number"></div></div></div>
+                </div>
             </div>
             <div id="card-container">
-                <div class="card">card 1</div>
-                <div class="card">card 2</div>
-                <div class="card">card 3</div>
-                <div class="card">card 1</div>
-                <div class="card">card 2</div>
-                <div class="card">card 3</div>
-                <div class="card">card 1</div>
-                <div class="card">card 2</div>
-                <div class="card">card 3</div>
+                <div>
+                    <div class="card">
+                        <h3>Pichu</h3>
+                        <img
+                            src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/172.png">
+                        <p>Attack: <span id="attack">40</span></p>
+
+
+
+
+                    </div>
+                    <div class="card">card 2</div>
+                    <div class="card">card 3</div>
+                    <div class="card">card 4</div>
+                    <div class="card">card 5</div>
+                    <div class="card">card 6</div>
+                    <div class="card">card 7</div>
+                    <div class="card">card 8</div>
+                    <div class="card">card 9</div>
+                    <div class="card">card 10</div>
+                </div>
             </div>
         </div>
     </body>

@@ -1,0 +1,45 @@
+#settings {
+    grid-area:options;
+    width:100%;
+    background-color:#b4e6ee;
+    display:flex;
+}
+
+.settings-container {
+    width:50%;
+    height:100%;
+    border: 2px dashed #297383;
+    border-collapse: collapse;
+    display:flex;
+    justify-content:center;
+    
+}
+#search, #sort {
+    padding:10px;
+    height:100%
+
+}
+
+@media (min-width: 700px) {
+    #settings {
+        height:30%;
+        flex-direction: column;
+        align-items: flex-end;  
+
+    }
+
+    .settings-container {
+        width:97%;
+        flex-direction:column;
+        justify-content:flex-start;
+        
+    }
+    #search, #sort {
+        height:50%
+    }
+
+    .search-controls input {
+        width:100%;
+    }
+
+}

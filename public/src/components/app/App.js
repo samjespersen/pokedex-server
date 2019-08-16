@@ -12,26 +12,23 @@ class App extends Component {
 
         const settingsBar = new SettingsBar();
         const settingsBarDOM = settingsBar.renderDOM();
-        const settingsContainer = dom.querySelector('#settings-container');
+        const settingsContainer = dom.querySelector('#settings-div');
         settingsContainer.appendChild(settingsBarDOM);
 
         const card = new Card({ number: 10 });
         const cardDOM = card.renderDOM();
-        const cardsContainer = dom.querySelector('#cards-container');
+        const cardsContainer = dom.querySelector('#card-container');
         cardsContainer.appendChild(cardDOM);
 
     }
     renderHTML() {
         return /*html*/`
-        <div>
-             <div id="header-container">
-                <!-- header -->
+        <div id="wrapper">
+             <header id="header-container">
+                </header>
+                <div id="settings-div">
                 </div>
-                <div id="settings-container">
-                <!-- settings -->
-                </div>
-                <div id="cards-container">
-                <!-- cards -->
+                <div id="card-container">
                 </div>
             </div>
         `;

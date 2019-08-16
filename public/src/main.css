@@ -19,95 +19,10 @@ main {
         "items" ;
 }
 
-
 body {
     max-width:1000px;
     margin:auto;
     height:100%;
-}
-
-#settings {
-    grid-area:options;
-    width:100%;
-    background-color:#b4e6ee;
-    display:flex;
-}
-
-.settings-container {
-    width:50%;
-    height:100%;
-    border: 2px dashed black;
-    border-collapse: collapse;
-    display:flex;
-    justify-content:center;
-    
-}
-#search, #sort {
-    padding:10px;
-    height:100%
-
-}
-
-
-
-
-@media (min-width: 700px) {
-
-
-
-  #settings {
-    grid-area:options;
-    width:100%;
-    height:30%;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;  
-
-}
-    
- #wrapper {
-    grid-template-rows: 10% 90%;
-    grid-template-columns: 20% 80%;
-    grid-template-areas:
-        "header header"
-        "options items"
- }
-
-.settings-container {
-    width:100%;
-    height:100%;
-    flex-direction:column;
-    justify-content:flex-start;
-    
-}
-#search, #sort {
-    height:50%
-
-
-}
-
-.search-controls input {
-    width:100%;
-}
-
-} 
-
-
-#card-container {
-    grid-area:items;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
-    margin:10px;
-    box-sizing: border-box;
-        width:100%;
-}
-
-header {
-    grid-area:header;
-    background-color:#5a9ca4;
-    padding: 0 20px;
-    box-sizing: border-box;
 }
 
 h1 {
@@ -120,34 +35,16 @@ h2 {
     font-family: 'Nanum Pen Script', cursive;
     font-size: 40px;
     color:#297383;
-
 }
 
-#logo {
-    height:120px;
-    width:120px;
+h3 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 2.1em;
 }
 
-#logo img {
-    width:100%;
-    height:100%;
-    object-fit: fill;
-}
-
-#main-header {
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.card {
-    height: 200px;
-    width: 100%;
-    border: 1px solid black;
+p {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.5em;
 }
 
 .hidden #settings {
@@ -160,3 +57,15 @@ h2 {
         "header"
         "items"
 }
+
+@media (min-width: 700px) {
+        
+    #wrapper {
+        grid-template-rows: 10% 90%;
+        grid-template-columns: 20% 80%;
+        grid-template-areas:
+            "header header"
+            "options items";
+    }
+}
+

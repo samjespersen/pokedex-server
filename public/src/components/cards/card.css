@@ -1,0 +1,25 @@
+#card-container > div{
+    grid-area:items;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.card {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #297383;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align:center;
+
+}
+
+.card img {
+    object-fit:contain;
+    height: 150px;
+}
+
